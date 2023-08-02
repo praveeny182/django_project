@@ -1,0 +1,40 @@
+
+</form>
+<button class="open-button" onclick="openForm1()">PDF MERGER</button>
+<div class="form-popup" id="myForm-1">
+<form method="post" enctype="multipart/form-data" class="form-container">
+      {% csrf_token %}
+  <label for="fname">file 1:</label>
+  <input type="file" id="fname" name="fname" required><br><br>
+  <label for="lname">file 2:</label>
+  <input type="file" id="lname" name="lname" required><br><br>
+  <!-- <input type="file" name="myfile_1"> -->
+  <button type="submit" class="btn" onclick="closeForm1()">Upload</button>
+  <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  <button id="resetbtn"
+                        type="button"
+                        onClick="this.form.reset()">
+                  Reset file
+              </button>
+  </form>
+
+</div>	
+
+
+
+
+
+
+
+  <script>
+  function openForm1() {
+    document.getElementById("myForm-1").style.display = "block";
+  }
+  
+  function closeForm1() {
+    document.getElementById("myForm-1").style.display = "none";
+  }
+
+
+
+  </script>

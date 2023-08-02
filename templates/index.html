@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>Document convertion</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script
+			id="sap-ui-bootstrap"
+			
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-modules="sap.m.library"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async" >
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				new sap.m.Text({
+					text : "SAPUI5 is loaded successfully!"
+				}).placeAt("content");
+			});
+		</script>
+
+<style>
+	table, td {
+	  display: inline-block;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+	</style>
+	{% include "header.html" %}
+	</head>
+	
+	<body class="sapUiBody" id="content" style="background-color:powderblue;">
+		<h1><center>Document Conversion </center></h1>
+		<div>
+			{% include 'header.html' %} 
+			{% include 'base.html' %}
+			<table >
+				
+				<tr>
+					
+					<td>{% include 'imgresize.html' %}</td>
+					<td>{% include 'pdfmerge.html' %}</td>
+					<td>{% include 'lock.html' %}</td> 
+					<td>{% include 'unlock.html' %}</td>
+				</tr>
+			
+			  </table>
+
+
+
+
+
+
+
+
+
+
+
+			
+	   		
+			
+			
+			
+			
+		</div>
+       
+			
+
+		
+		
+	</body>
+</html>

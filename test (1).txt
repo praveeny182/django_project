@@ -1,0 +1,12 @@
+POST Error
+HP Battery Alert
+The system has detected the storage capacity of the battery stated below to be
+For optimal performance,this battery
+very low
+may need to be replaced.
+Primary(Internal) Battery(601 )
+Enter
+Continue Startup
+For more inforiation
+please visit: WWwhp comlgoltechcenterlstartup
+0

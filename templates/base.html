@@ -1,0 +1,29 @@
+<form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    
+    <label for="cars">Choose a option:</label>
+    <select name="cars" id="cars">
+        <option value="none">---NONE---</option>
+        <option value="imgtopdf">IMG TO PDF</option>
+        <option value="doctopdf">DOC TO PDF</option>
+        
+        <option value="txt">TXT TO PDF</option>
+        
+        <option value="pdftodoc">PDF TO DOC</option>
+        <option value="imgconvert">IMG COLOR TO BW</option>
+        <option value="pdfreduce">PDF SIZE REDUCE(86% file reduction)</option>
+        <option value="imgscan">Image Scan</option>
+        
+        
+    </select>
+
+    <br><br>
+    <input type="file" name="myfile" required>
+    <button type="submit">Upload</button>
+    <button id="resetbtn"
+                type="button"
+                onClick="this.form.reset()">
+          Reset file
+      </button>
+</form>

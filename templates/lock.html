@@ -1,0 +1,38 @@
+</form>
+<button class="open-button" onclick="openForm2()">Encrypt PDF</button>
+<div class="form-popup" id="myForm-2">
+<form method="post" enctype="multipart/form-data" class="form-container">
+      {% csrf_token %}
+  <label for="lockname">file :</label>
+  <input type="file" id="fname" name="lockname" required><br><br>
+  <label for="passname">Password:</label>
+  <input type="password" id="lname" name="passname" required><br><br>
+  <!-- <input type="file" name="myfile_1"> -->
+  <button type="submit" class="btn" onclick="closeForm2()">Upload</button>
+  <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+  <button id="resetbtn"
+                        type="button"
+                        onClick="this.form.reset()">
+                  Reset file
+              </button>
+  </form>
+
+</div>	
+
+
+
+
+
+
+
+  <script>
+  function openForm2() {
+    document.getElementById("myForm-2").style.display = "block";
+  }
+  
+  function closeForm2() {
+    document.getElementById("myForm-2").style.display = "none";
+  }
+  
+  
+  </script>
