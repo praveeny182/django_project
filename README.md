@@ -30,21 +30,17 @@ The entire application, including all required dependencies, is packaged into a 
 ### Docker Image
 
 The Docker image for this project is available on Docker Hub:
-docker pull praveeny182/converter
+# docker pull praveeny182/converter
 
 
 To run the container:
-docker run -p 8000:8000 praveeny182/converter
+# docker run -p 8000:8000 praveeny182/converter
 
 Replace `-p 8000:8000` with the desired port mapping if needed.
 
-## Usage
-
-Once the container is running, the API endpoints can be accessed via HTTP requests. Detailed API documentation with usage instructions is available at [API Documentation URL].
-
 ## Contributions
 
-Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on [GitHub Repository URL].
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on [https://github.com/praveeny182/django_project].
 
 ## License
 
